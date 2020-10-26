@@ -10,7 +10,7 @@ function Profile({fullName="houcem", bio, profession}) {
     }
   return (
     <div className="Profile">
-      <img src="logo512.png"/>
+      <img src="logo512.png" alt='profilPhoto'/>
   <h1 href='/'style={styleName} onClick={handleName}>{fullName}</h1>
   <h1>{bio}</h1>
   <h1>{profession}</h1>
@@ -18,7 +18,7 @@ function Profile({fullName="houcem", bio, profession}) {
   );
 }
 Profile.propTypes = {
-    bio: PropTypes.oneOf([true, false])
+    bio: PropTypes.string
   };
 
 export default Profile;
